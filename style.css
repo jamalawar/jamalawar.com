@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #0d0d0d;
+  --text-color: #e0e0e0;
+  --accent-color: #d03232;
+  --light-accent: #444;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6f61;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  font-weight: 600;
+  color: var(--text-color);
+  letter-spacing: 0.05rem;
+}
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(13, 13, 13, 1)), url('../images/headshot.jpg') center/cover no-repeat;
+  color: var(--text-color);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--light-accent);
+}
+.section h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #090909;
+  color: #888;
+}
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+.blog-list li {
+  margin-bottom: 10px;
+}
+.blog-list li a {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+/* Logo strip styles for client logos */
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.logo-item {
+  width: 120px;
+  height: 60px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--light-accent);
+  color: #888;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 5px;
+}
